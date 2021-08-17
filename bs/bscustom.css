@@ -1,0 +1,160 @@
+/* 字體設定 */
+body {
+  font-family: "Roboto", "Noto Sans TC", arial, sans-serif;
+  background: #eee;
+}
+
+.material-icon {
+  font-family: "Mater Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5rem;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+#veromcaSlider img {
+  object-fit: cover;
+ /* 刷濾鏡 */
+  filter: grayscale(60%);
+}
+
+#veromcaSlider .carousel-caption {
+ /* 調整字體的陰影 */
+  text-shadow: 1xp 1xp 5xp whitesmoke;
+}
+
+#veromcaSlider .carousel-indicators > button {
+ /* 調整按鈕 */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 15px solid transparent;
+}
+
+/* veromcaFooter */
+#veromcaArrow {
+  right: 5vh;
+  bottom: 5vh;
+  z-index: 999;
+}
+
+#veromcaArrow {
+  animation: jump 2s infinite;
+
+ /* 找 網上的動畫 按F12檢查 找key frame 做動畫 */
+ /* https://codepen.io/syedrafeeq/pen/yEJKn */
+}
+
+#veromcaRoom .nav-link {
+  flex: 0 1 15%;
+  background-color: rgb(209, 209, 209);
+  color: rgb(93, 93, 93);
+  border-color: rgb(209, 209, 209);
+ /* text-decoration: none; */
+
+ /* 背景色陰影 */
+ box-shadow: 1px -1px 4px 0px #b0b0b0a8;
+}
+
+#veromcaRoom .nav-link.active {
+ /* 調點選到背景的顏色 */
+  background-color: rgb(152, 152, 151);
+  color: rgb(255, 255, 255);
+}
+
+#veromcaRoom .nav-tabs,
+#veromcaRoom .nav-link {
+ /* 調navBar下線的顏色 */
+  border-bottom: 1px solid rgb(152, 152, 151);
+}
+
+#veromcaRoom .tab-content>.active{
+  display: flex;
+}
+
+#veromcaPrice th,
+#veromcaPrice td{
+  /* text-align: center; */
+  vertical-align: middle;
+}
+
+#veromcaRoom .tab-content>.row.active{
+  display: flex;
+}
+
+
+/* 偶數的image在992的時候要變成向右靠齊 */
+/* #veromcaFacility li:nth-of-type(even) img{
+  order: 1;
+} */
+
+
+/* veromcaFacility */
+/* 偶數的image在992的時候要變成向右靠齊 */
+@media(min-width:992px){
+  #veromcaFacility li:nth-of-type(even) img{
+    order: 1;
+  }
+}
+
+
+/* @media(min-width:992px){
+  #veromcaFacility li:nth-of-type(even) h5{
+  text-align: end;  
+}
+} */
+
+#veromcaFacility{
+  /* 隨機圖片 */
+  /* background:url("https://picsum.photos/id/1000/1000?random=1"); */
+
+  /* 正常滿版圖片 */
+  /* background: url(../media/ee.jpg);
+  background-size: cover;
+  background-position: center; */
+  
+
+  /* 圖片疊加效果 */
+  background: 
+  radial-gradient(circle, transparent 45%, #ccc 85%),
+  url(../media/ee.jpg);
+  
+  /* background-blend-mode: multiply, screen; */
+  background-size: cover;
+  background-position: center;
+
+  /* 背景圖不要跟著滾動 */
+  background-attachment: fixed;
+
+  /* 文字陰影 */
+  text-shadow: 2px 2px 10px black;
+}
+
+
+/* veromcaFood */
+#veromcaFood .accordion-button:not(.collapsed){
+  /* 選到的對象反黃 */
+  background: rgb(230, 161, 13);
+  /* 背景設定白色 */
+  color: whitesmoke !important;
+}
+
+#veromcaFood small{
+  transform: rotate(-20deg) translate(-25%,-25%);
+  z-index: 999;
+}
+
+/* vrromcaTrans */
+#veromcaTrans iframe{
+  filter: grayscale(70%) brightness(30%);
+}
+
+/* nav轉場效果 */
+.nav-link{
+  transition: 1s ease;
+}
