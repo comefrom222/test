@@ -1,0 +1,168 @@
+body {
+ font-family: "EB Garamond", serif, "Fuggles", "cursive", "Noto Sans TC",
+  sans-serif;
+ background: #f0eeee;
+}
+
+/**************** Slider ****************/
+
+#veromcaSlider {
+ object-fit: cover;
+ /* filter: grayscale(60%); */
+}
+
+#veromcaSlider .carousel-caption,
+#veromcaFooter h1 {
+ font-family: "Satisfy", "cursive";
+ text-shadow: 1px 1px 15px rgb(58 54 54 / 31%);
+}
+
+/**************** Footer ****************/
+#veromcaFooter p {
+ font-family: "Neucha", "cursive";
+}
+
+#veromcaFooter {
+ background: url(../img/footerBg.png), #b4958d;
+ background-repeat: no-repeat, no-repeat;
+ background-position: right;
+ background-size: cover;
+ text-shadow: 1px 1px 10px rgb(15 14 14 / 37%);
+ /* filter: grayscale(10%); */
+}
+
+#veromcaArrow {
+ right: 5vh;
+ bottom: 5vh;
+ z-index: 999;
+}
+
+/**************** AboutMe ****************/
+#veromcaAboutMe {
+ background: #cab5b0;
+ /* filter: grayscale(10%); */
+ font-family: "Cormorant", "serif";
+}
+
+#veromcaPortfolioImg {
+ opacity: 0.5;
+}
+
+#veromcaAboutMe a {
+ text-decoration: none !important;
+}
+
+/**************** Experience ****************/
+#veromcaExperience {
+ background: #d1c2be;
+ color: #595757;
+ font-family: "serif";
+}
+
+#verticleLine {
+ border-right: 1px solid #595757;
+ height: 200px;
+ overflow: visible;
+}
+
+#experiencePoint {
+ position: relative;
+ overflow: auto;
+ left: -56px;
+ top: 17px;
+  /* left: -8px; */
+
+}
+
+/**************** Login ****************/
+#veromcaLogIn {
+ font-family: serif;
+}
+
+#veromcaLogIn input {
+ border: none;
+ outline: none;
+}
+/**************** Project ****************/
+#veromcaProject {
+ background: #e1d4d0;
+ font-family: serif;
+}
+
+#projectImg {
+ background: url(../img/projectImg.png) no-repeat,
+  url(../img/projectImg2.png) no-repeat;
+ background-size: cover;
+}
+
+/* 1：0.25 * 1rem = 0.25px
+2：0.5 * 1rem = 8px
+3：1 * 1rem = 16px
+4：1.5 * 1rem = 24px
+5：3 * 1rem = 48px */
+
+/* font-family: 'EB Garamond', serif;
+font-family: 'Fuggles', cursive;
+font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Neucha', cursive; 
+font-family: 'Cormorant', serif;
+*/
+
+/**************** Footer ****************/
+@media (min-width: 992px) {
+ #veromcaFooter p:last-child {
+  text-align: center !important;
+ }
+}
+
+/**************** AboutMe ****************/
+@media (min-width: 992px) {
+  #veromcaMediaIcon :nth-last-of-type(1) {
+    text-align: center !important;
+  }
+}
+
+
+/**************** Experience ****************/
+/* 經歷的第一段文字 */
+@media (min-width: 992px) {
+ #verticleLine {
+  padding: 48px !important;
+  margin: 0px !important;
+ }
+}
+
+/* 經歷的第二段文字 */
+@media (min-width: 992px) {
+ #verticleLine2 {
+  padding: 48px !important;
+  margin: 0px !important;
+ }
+}
+
+@media(min-width:992px){
+  #verticleLine h6{
+    font-size: 24px;
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+  }
+}
+
+/**************** Project ****************/
+/* 作品區 */
+@media (min-width: 768px) {
+ #projectCard {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 48px;
+ }
+}
+
+/* @media (min-width: 768px) {
+ #ProjectCardSecondSection {
+  display: flex !important;
+  align-items: end !important;
+  flex-flow: column !important;
+ }
+} */
